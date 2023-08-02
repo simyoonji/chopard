@@ -1,0 +1,705 @@
+@font-face {
+    font-family: 'MinSans-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0; }
+li{list-style: none;}
+em, i, address{font-style: normal;}
+a{text-decoration: none; color: inherit;}
+table{border-collapse: collapse;}
+textarea {resize: none;}
+
+#main2-wrap {font-family:'MinSans-Regular'; box-sizing: border-box;}
+#main2-wrap h2 {font-family: Georgia, 'Times New Roman', Times, serif; font-size: 35px; font-weight: lighter;}
+
+/*전체*/
+
+#main2-wrap .main2-inner{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	
+}
+/*섹션4*/
+#section4{
+	
+	min-width: 320px;
+	margin-bottom: 50px;
+	
+}
+#section4 > ul {
+	display: flex;
+	max-width: 1200px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+#section4 > ul > li{
+	display: flex;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+#section4 > ul > li > video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;	
+}
+
+
+#section4 > ul > li > div {
+	width: 100%;
+	height: 336px;
+	padding: 20px 96px;
+	text-align: center;
+}
+
+#section4 > ul > li > div > span > p{
+	
+	
+}
+#section4 h2{
+	position: relative;
+	
+}
+#section4 h2::after {
+	background-color: currentColor;
+    content: "";
+    display: block;
+	width: 3rem;
+    height: 1px;
+	margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section4 p:nth-of-type(2){
+	margin: 40px 0;
+	text-align: left;
+	
+}
+
+#section4 button{
+	font-size: 16px;
+	padding: 9.5px 61.055px;
+	background-color: #fff;
+	border: 1px solid #000000;
+	transition: 0.5s;
+	cursor: pointer;
+}
+#section4 button:hover{
+	background-color: black;
+	border: 1px solid transparent;
+	color: #fff;
+}
+
+/*section5*/
+#section5 {
+	max-width: 1200px;
+	height: 637px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	
+}
+
+#section5 div.swiper-container {
+	
+}
+/*section5 title*/
+#section5 div.section5-title {
+	width: 100%;
+	height: 84px;
+	
+	text-align: center;
+	
+}
+#section5 div.section5-title > p {
+	
+}
+#section5 div.section5-title > p > h2{
+	
+}
+#section5 div.section5-title::after {
+	background-color: currentColor;
+    content: "";
+    display: block;
+    height: 1px;
+	margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 3rem;
+	
+}
+/*section5 img box*/
+#section5 ul.swiper-wrapper {
+	
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;	
+}
+#section5 li{
+	position: relative;
+	width: 368px;
+	height: 506px;
+	flex: 0 0 33.3%;
+	margin-top: 47px;
+	text-align: center;
+	
+}
+
+#section5 li.swiper-slide a{
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+#section5 li img{
+	width: 275px;
+	height: 506px;
+	object-fit: cover;
+	
+}
+
+#section5 .slide-txtbox {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 275px;
+	height: 506px;
+	margin-left:-137.5px;
+	padding: 50px 0;
+	text-align: center;
+	background-color: rgba(255,255,255,0.95);
+	opacity: 0;
+	transition: 0.5s;
+	z-index: 50;
+}
+#section5 .slide-txtbox:hover {
+	opacity: 1;
+}
+
+#section5 .slide-txtbox h2 {
+	font-size: 40px;
+	letter-spacing : 0.03em;
+	margin-top:60px;
+	font-family: 'MinSans-Regular';
+}
+#section5 .slide-txtbox h2::after {
+	background-color: currentColor;
+    content: "";
+    display: block;
+    height: 1px;
+	margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2rem;
+	}
+#section5 .slide-txtbox p {
+	font-size: 16px;
+	margin-top: 20px;
+	
+	
+}
+#section5 .slide-txtbox button{
+	font-size: 16px;
+	width: 100%;
+	padding: 9.5px 0;
+	margin-top: 50px;
+	background-color: #fff;
+	border: 1px solid #000000;
+	transition: 0.5s;
+	cursor: pointer;
+}
+#section5 .slide-txtbox button:hover{
+	background-color: black;
+	border: 1px solid transparent;
+	color: #fff;
+}
+
+
+#section5 .section5-arrow img{width: 25px; height: 50px; position: absolute; top: 60%; z-index: 100; transform: translateY(-50%); cursor: pointer;}
+#section5 .section5-arrow img.prev{left: 10px; transition: 0.2s;}
+#section5 .section5-arrow img.next{right: 10px; transition: 0.2s;}
+
+#section5 .section5-arrow img.prev:hover{left: 5px;}
+#section5 .section5-arrow img.next:hover{right: 5px;}
+
+/*섹션6*/
+#section6 {
+	position: relative;
+	width: 100%;
+	height: 700px;
+	margin-bottom: 50px;
+}
+#section6 div.section6-inner {
+	position: relative;
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	background-color:transparent;
+	z-index: 2;
+}
+
+#section6 .section6-inner > span {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	background-color: transparent;
+}
+#section6 .section6-inner h2 {
+	
+	margin-top: 300px;
+	margin-left: 40px;
+	color: #fff;
+}
+
+#section6 button{
+	font-size: 16px;
+	padding: 9.5px 61.055px;
+	margin-top: 30px;
+	margin-left: 40px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	transition: 0.5s;
+	cursor: pointer;
+}
+#section6 button:hover{
+	background-color: #fff;
+	border: 1px solid transparent;
+	color: #000000;
+}
+
+#section6 div.section6-imgbox{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 700px;
+	
+}
+#section6 > div.section6-imgbox img{
+	
+	width: 100%;
+	height: 700px;
+	object-fit: cover;
+	object-position: center;
+}
+/*섹션7*/
+#section7 {
+	position: relative;
+	max-width: 1200px;
+	height: 678.62px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+#section7 div.section7-title {
+	width: 100%;
+	height: 64.81px;
+	text-align: center;
+}
+#section7 div.section7-title::after {
+    background-color: currentColor;
+    content: "";
+    display: block;
+	width: 3rem;
+    height: 1px;
+	margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#section7 div.section7-title > h2 {
+	
+}	
+#section7 > ul {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+
+}
+#section7 > ul > li{
+	width: 393.33px;
+	height: 563.75px;
+	
+}
+#section7 > ul > li > a{
+	display: block;
+}
+#section7 > ul > li > a > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+#section7 > ul > li h2{
+	margin-top: 5px;
+	font-size: 30px;
+}
+#section7 > ul > li p{
+	display: inline-block;
+	margin-top: 5px;
+	border-bottom: 1px solid black;
+	transition: 0.2s;
+}
+#section7 > ul > li p:hover {
+border-bottom: none;}
+/*섹션7 arrow*/
+#section7 .section7-arrow {display: none;}
+
+
+/*섹션7 스크롤*/
+#section7 .section7-scroll {
+	display: none;
+	width: 100%;
+	height: 5px;		
+}
+	#section7 .section7-scroll > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	}
+
+
+
+@media all and (max-width:939px){
+ /*섹션4-모바일----------------------------------------------------------------*/
+	#section4 {
+	padding: 0 15px;	
+	}
+	#section4 > ul {
+	width: 100%;
+	height: 449.5px;
+}
+	#section4 > ul > li{
+	width: 50%;
+	height: 100%;
+}
+	#section4 > ul > li > div {
+	width: 100%;
+	height: 304px;
+	padding: 20px 24px;
+	
+}
+	
+#section4 p:nth-of-type(2){
+	margin: 24px 0;
+}
+
+	
+#section4 button{
+	font-size: 16px;
+	padding: 8px 48px;
+}
+/*섹션5-모바일----------------------------------------------------------------*/
+	
+	#section5 {
+	width: 100%;
+	height: 637px;
+	padding: 0 15px;
+	}
+	#section5 li{
+	position: relative;
+	width: 368px;
+	height: 506px;
+	flex: 0 0 50%;
+	margin-top: 50px;
+	text-align: center;
+	background-color: #fff;
+}
+	#section5 li.swiper-slide a{
+	display: block;
+	width: 100%;
+}
+
+	#section5 li img{
+	width: 275px;
+	height: 506px;
+	object-fit: cover;
+	
+}
+	#section5 .slide-txtbox {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 275px;
+	height: 506px;
+	margin-left:-137.5px;
+	padding: 50px 0;
+	text-align: center;
+	background-color: rgba(255,255,255,0.9);
+	opacity: 0;
+	transition: 0.5s;
+	z-index: 50;
+	
+}
+/*섹션6-모바일----------------------------------------------------------------*/
+	#section6 {
+		height: 550px;
+	}
+	
+	#section6 .section6-inner h2 {
+	display: none;
+}
+	#section6 button{
+	padding: 8.5px 59px;
+	margin-top: 270px;
+	margin-left: 40px;
+	transition: none;
+	
+}
+	#section6 div.section6-imgbox{
+	width: 100%;
+	height: 550px;
+	
+}
+#section6 > div.section6-imgbox img{
+	width: 100%;
+	height: 550px;
+	object-fit: cover;
+	object-position: center;
+}
+/*섹션7-모바일----------------------------------------------------------------*/
+	
+	#section7 {
+	width: 100%;
+	height: 740.01px;
+	margin: 0 auto;
+	padding: 0 15px;
+	margin-bottom: 50px;
+}
+
+	#section7 > ul {
+	display: flex;
+	flex: 0 0 50%;
+	margin-top: 50px;
+}
+	
+	#section7 > ul > li{
+	width: 442.5px;
+	height: 625.1px;
+}	
+	#section7 > ul > li:nth-of-type(3){
+	display: none;
+}	
+	#section7 .arrow {display: block;
+	}
+	
+}
+	
+
+@media all and (max-width:599px){
+ /*섹션4-모바일----------------------------------------------------------------*/
+	#section4 > ul {
+	display: block;
+	width: 100%;
+	height: 864.38px;
+	margin: 48px 0;
+	}
+	#section4 > ul > li:nth-of-type(1){
+	width: 100%;
+	height: 559px;
+}
+	#section4 > ul > li > video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;	
+}
+
+	#section4 > ul > li:nth-of-type(2){
+	width: 100%;
+	height: 305.38px;
+}
+	#section4 > ul > li > div {
+	width: 100%;
+	height: 305.38px;
+	padding: 20px 96px;
+	
+}
+	
+#section4 p:nth-of-type(2){
+	margin: 24px 0;
+}
+
+	
+#section4 button{
+	font-size: 16px;
+	padding: 12px 48px;
+}
+/*섹션5-모바일----------------------------------------------------------------*/
+	
+	#section5 {
+		
+	width: 100%;
+	height: 631px;
+	padding: 0 15px;
+	}
+	
+	#section5 li{
+	position: relative;
+	width: 100%;
+	height: 506px;
+	flex: 0 0 100%;
+	margin-top: 48px;
+	text-align: center;
+	background-color: #fff;
+	
+}
+#section5 li.swiper-slide a{
+	display: block;
+	width: 100%;
+}
+
+#section5 li img{
+	width: 275px;
+	height: 506px;
+	object-fit: cover;
+}
+	
+	#section5 .slide-txtbox {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 275px;
+	height: 506px;
+	
+	margin-left: -137.5px;
+	padding: 50px 0;
+	text-align: center;
+	background-color: rgba(255,255,255,0.9);
+	opacity: 0;
+	transition: 0.5s;
+	z-index: 50;
+}
+/*섹션6-모바일----------------------------------------------------------------*/
+	#section6 {
+	width: 100%;
+	height: 866.19px;
+	padding:0 15px;
+	}
+	
+	#section6 div.section6-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	
+}
+
+#section6 .section6-inner > span {
+	width: 100%;
+	height: 100%;
+	
+}
+	
+	#section6 .section6-inner h2 {
+	margin-top: 690px;
+	margin-right: 30px;
+	display: block;
+}
+	
+	#section6 button{
+	font-size: 17px;
+	padding: 10.5px 62px;
+	margin-top: 20px;
+	margin-right: 30px;
+	bottom: 0;
+	transition: 0.5s;
+}
+	
+#section6 > div.section6-imgbox img{
+	width: 100%;
+	height: 869.95px;
+	object-fit: cover;
+	object-position: center;
+}
+/*섹션7-모바일----------------------------------------------------------------*/
+	
+	#section7 {
+	width: 100%;
+	height: 930px;
+	margin: 0 auto;
+	padding: 0 15px;
+	margin-bottom: 50px;
+	background-color:#fff;
+}
+	#section7 div.section7-title {
+	width: 100%;
+	height: 58.19px;
+	text-align: center;
+}
+
+	#section7 > ul {
+	display: flex;
+	flex: 0 0 100%;
+	margin-top: 50px;
+}
+	
+	#section7 > ul > li{
+	width: 100%;
+	height: 778px;
+}	
+	#section7 > ul > li:nth-of-type(2){
+	display: none;
+}	
+	#section7 > ul > li:nth-of-type(3){
+	display: none;
+		
+}	#section7 > ul > li > a > img{
+	width: 100%;
+	height: 699.58px;
+	object-fit: cover;
+	object-position: center;
+}
+	#section7 > ul > li h2{
+	margin-top: 5px;
+}
+	#section7 > ul > li p{
+	margin-top: 8px;
+	
+}
+	#section7 .section7-arrow {display: block;
+	}
+	
+	#section7 .section7-arrow img{width: 40px; height: 48px; position: absolute; top: 55%; z-index: 100; transform: translateY(-50%); cursor: pointer; background-color:rgba(255,255,255,0.8);}
+	
+	#section7 .section7-arrow img.prev{left: 15px; transition: 0.2s;}
+	#section7 .section7-arrow img.next{right: 15px; transition: 0.2s;}
+	#section7 .section7-arrow img.prev:hover{left: 12px;}
+	#section7 .section7-arrow img.next:hover{right: 12px;}
+	
+	#section7 .section7-scroll {
+	display: block;
+	width: 100%;
+	height: 5px;	
+	margin-top: 25px;
+	
+}	
+	#section7 .section7-scroll > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	}	
+}
+
+@media all and (max-width:437px) {
+	#section4 p:nth-of-type(2){
+	margin: 18px 0;
+}
+
+	
+#section4 button{
+	font-size: 15px;
+	padding: 6px 24px;
+}
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 연결식 -->
+    <link href="css/main1.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <section id="section1">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide slide1">
+                        <video autoplay loop muted class="pc">
+                            <source src="img/CHOPARD LOVES CINEMA - The New Digital Series.mp4">
+                        </video>
+                        <video autoplay loop muted class="m">
+                            <source
+                                src="https://objects-prod.cdn.chopard.com/video/upload/q_auto/Campaigns/chopard-loves-cinema/chopard_feelgood_teaser_2023_30s_verticalp25.mp4"
+                                type="video/mp4">
+                        </video>
+                        <a href="javascript:;">
+                            <h2>영화를 사랑하는 쇼파드</h2>
+                            <p>캠페인 자세히 보기</p>
+                        </a>
+                        <button></button>
+                    </li>
+                    <li class="swiper-slide slide2">
+                        <img class="slide_pc" src="img/header1.png" alt="slide2_pc">
+                        <img class="slide_m" src="img/header1_m.png" alt="slide2_m">
+                        <a href="javascript:;">
+                            <h2>쇼파드 X 에스파</h2>
+                            <p>캠페인 자세히 보기</p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide slide3">
+                        <img class="slide_pc" src="img/header2.png" alt="slide3_pc">
+                        <img class="slide_m" src="img/header2_m.png" alt="slide3_m">
+                        <a href="javascript:;">
+                            <h2>나만을 위한 마이 해피 하트!</h2>
+                            <p>캠페인 자세히 보기</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="prev arrow">
+                    <img src="img/prev.png" alt="prev slide">
+                </div>
+                <div class="next arrow">
+                    <img src="img/next.png" alt="next slide">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="section2">
+
+            <div class="section2_header">
+                <p>CHOPARD</p>
+                <h2>THE ARTISAN OF EMOTIONS, SINCE 1860</h2>
+                <div class="line"><!-- 선 --></div>
+            </div>
+
+            <div class="section2_inner">
+                <div class="left">
+                    <img src="img/section2.png" alt="img">
+                </div>
+
+                <div class="right">
+                    <p>쇼파드 X 줄리아 로버츠</p>
+                    <h3>영화를 향한 애정이라는 공통점</h3>
+
+                    <div class="line"><!-- 선 --></div>
+
+                    <span>2021년부터 해피 스포츠와 해피 다이아몬드 컬렉션의 모델로 활동 중인 쇼파드 글로벌 홍보대사
+                        줄리아 로버츠(Julia Roberts)가 이제 쇼파드 여성 럭셔리 시계 및 주얼리 컬렉션의
+                        뮤즈로 활약합니다 이처럼 특별한 인연을 기념하는 의미로, 쇼파드와 줄리아 로버츠가
+                        영화를 향한 애정이라는 공통점을 담아 제임스 그레이의 렌즈로 담아낸 화려한 캠페인을 선보입니다.
+                    </span>
+                    <a href="javascript:;">자세히보기</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="section3">
+            <ul class="section3_bg">
+                <li class="bg_1"><img src="img/section3.png" alt="bg"></li>
+                <li class="bg_2"><img src="img/section3_2.png" alt="bg2"></li>
+                <li class="bg_3"><img src="img/section3_3.png" alt="bg3"></li>
+                <li class="bg_4"><img src="img/section3_4.png" alt="bg4"></li>
+            </ul>
+            <div class="text">
+                <a href="javascript:;">
+                    <h3>끝없이 펼쳐지는 독창성</h3>
+                    <div class="line"><!-- 선 --></div>
+                    <p>
+                        쇼파드의 하이 주얼리 부문을 이끄는 쇼파드 공동 대표 겸 아트 디렉터
+                        캐롤라인 슈펠레(Caroline Scheufele)는 스위스 최대 규모의 공방을 지속적으로
+                        발전시키며 마음을 움직이는 장인 정신을 한데 모아 진귀한 젬스톤을 예찬하고
+                        끝없이 뻗어 나가는 독창적인 감각을 선사하는 30여 종류의 장인 기술을 선보입니다.
+                    </p>
+                    <button>쇼파드의 하이 주얼리 세계 살펴보기</button>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+		var swiper = new Swiper('.swiper-container', {
+
+            slidesPerView: 1,	// 화면에 보여주는 이미지 개수
+            loop: true,	// 무한 루프 적용
+            pagination: {	// 하단에 점 표시 적용
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {	// 좌우 화살표 적용
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+			effect: 'slide', // slide, fade, cube, coverflow, flip
+			speed: 1000
+        });
+
+        $("#section1 button").click(function(){
+            $(this).toggleClass("click")
+        });
+	</script>
+
+</body>
+</html>

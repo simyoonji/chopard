@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'MinSans-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0; font-family:'MinSans-Regular';}
+li{list-style: none;}
+em, i, address{font-style: normal;}
+a{text-decoration: none; color: inherit;}
+table{border-collapse: collapse;}
+textarea {resize: none;}
+.clearFix::after{content: ""; clear: both; display: block;}
+
+#wrap{width: 100%; min-width: 320px;}
+
+/* 선 */
+.line{width: 50px; height: 1px; background: black; margin: 30px auto;}
+
+.main_bg{width: 100%;}
+.main_bg img{width: 100%; object-fit: cover;}
+.main_bg img.bg_pc{}
+.main_bg img.bg_m{display: none;}
+
+.sub2_inner{max-width: 1200px; margin: 0 auto; padding: 0 15px; box-sizing: border-box;}
+
+.section1{margin-top: 10px;}
+.section1 .top{}
+.section1 .top a{display: inline;}
+.section1 .section1_text{margin-top: 40px; text-align: center;}
+.section1 .section1_text h2{font-family: serif; font-size: 3rem; font-weight: lighter;}
+.section1 .section1_text p{max-width: 800px; margin: 0 auto; line-height: 1.8rem; font-size: 1.2rem; font-style: italic; font-family: serif;}
+.section1 ul{display: flex; justify-content: center; margin-top: 50px;}
+.section1 ul li{width: 450px; text-align: start; line-height: 1.5rem; box-sizing: border-box;}
+.section1 ul li:first-of-type{margin-right: 50px;}
+.section1>a{display: block; width: 220px; height: 40px; margin: 30px auto; text-align: center; line-height: 40px; border: 1px solid black; box-sizing: border-box;}
+
+.section1>a:hover{background: black; color: white;}
+
+.section2{margin: 50px 0;}
+.section2 ul.section2_menu{}
+.section2 ul.section2_menu>li{}
+.section2 ul.section2_menu>li button{display: flex; width: 100%; justify-content: space-between; line-height: 50px; padding: 0 5px; box-sizing: border-box; background: none; outline: none; border: none; border-bottom: 1px solid lightgray; cursor: pointer;}
+.section2 ul.section2_menu>li button p{font-size: 1rem;}
+.section2 ul.section2_menu>li button span{transform: rotate(90deg); transition: 0.5s;}
+.section2 ul.section2_menu>li button span.on{transform: rotate(-90deg);}
+.section2 ul.section2_menu>li .section2_text{display: none; position: relative; left: 0; top: 0; max-width: 800px; margin: 0 auto; background: white;}
+.section2 ul.section2_menu>li .section2_text.on{height: auto;}
+.section2 ul.section2_menu>li .section2_text h3{padding-top: 50px; text-align: center; font-size: 2rem;}
+.section2 ul.section2_menu>li .section2_text p{}
+.section2 ul.section2_menu>li .section2_text ul.tab{display: flex; justify-content: center; margin: 30px 0; height: 40px; border-bottom: 2px solid lightgray;}
+.section2 ul.section2_menu>li .section2_text ul.tab li{margin: 0 40px; height: 40px; font-size: 1.3rem; border-bottom: 2px solid black;}
+.section2 ul.section2_menu>li .section2_text ul.tab li a{display: block; width: 100%;}
+.section2 ul.section2_menu>li .section2_text .service1{margin-top: 50px;}
+.section2 ul.section2_menu>li .section2_text .service1 p{}
+.section2 ul.section2_menu>li .section2_text .service2{display: none; margin-top: 50px;}
+.section2 ul.section2_menu>li .section2_text .service2 p{}
+.section2 ul.section2_menu>li .section2_text p:last-of-type{margin-bottom: 50px;}
+
+.section2 ul.section2_menu>li .section2_text ul.tab li:last-of-type{border-bottom: none}
+
+
+.section2 ul.section2_menu li.service .section2_text h3:last-of-type{padding-top: 0px;}
+.section2 ul.section2_menu li.serviceCenter .section2_text p{margin: 50px 0;}
+.section2 ul.section2_menu li.serviceCenter .section2_text a{border-bottom: 1px solid black;}
+
+.section2 ul.section2_menu li.serviceCenter .section2_text a:hover{border-bottom: none;}
+
+@media all and (max-width:767px){
+
+    .main_bg img.bg_pc{display: none;}
+    .main_bg img.bg_m{display: block;}
+
+    .section1 .section1_text h2{font-size: 2.5rem;}
+    .section1 .section1_text p{line-height: 1.8rem; font-size: 1rem;}
+    .section1 ul{flex-wrap: wrap;}
+    .section1 ul li{max-width: 450px;}
+    
+    .section1 ul li:first-of-type{margin-right: 0; margin-bottom: 30px;}
+
+    .section2 ul.section2_menu>li .section2_text ul.tab li{margin: 0 20px;}
+
+	}
